@@ -15,6 +15,8 @@ RUN apk --no-cache add \
 RUN pip install --upgrade pip \
         awsebcli \
         awscli
+        
+RUN pip install --upgrade awsebcli
 
 RUN curl -L https://github.com/barnybug/cli53/releases/download/0.8.7/cli53-linux-386 > /usr/bin/cli53 && \
     chmod +x /usr/bin/cli53
